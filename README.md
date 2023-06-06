@@ -12,10 +12,10 @@ PRE-REQs:
 Steps:
 These are the basics to setup the initial environment (powershell / batch commands below):
 
-rm 'vagrant_deploys\packer_virtualbox_virtualbox.box'
-vagrant box remove centos8Stream
-cd 'PackerRepository'
-packer.exe build -on-error=abort -force .\centos.pkr.hcl
-cp 'PackerRepository\packer_virtualbox_virtualbox.box' '\vagrant_deploys'
-cd '\vagrant_deploys\'
-vagrant box add .\packer_virtualbox_virtualbox.box --name=centos8Stream
+rm 'vagrant_deploys\packer_virtualbox_virtualbox.box';
+vagrant box remove centos8Stream;
+cd 'PackerRepository';
+packer.exe build -on-error=abort -force .\centos.pkr.hcl;
+cp 'PackerRepository\packer_virtualbox_virtualbox.box' '\vagrant_deploys';
+cd '\vagrant_deploys\';
+vagrant box add .\packer_virtualbox_virtualbox.box --name=centos8Stream;
