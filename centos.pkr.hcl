@@ -25,7 +25,7 @@ variable "url" {
 
 variable "builderip" {
   type    = string
-  default = "192.168.15.5"
+  default = "192.168.15.7"
 }
 
 source "virtualbox-iso" "virtualbox" {
